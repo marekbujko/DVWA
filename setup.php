@@ -46,7 +46,6 @@ if( $DBMS == 'MySQL' ) {
 $git_ref = "<em>Unknown</em><br><br>";
 $mod_rewrite = "<em>Unknown</em><br>";
 
-
 if (function_exists('apache_get_modules')) {
 	if (in_array('mod_rewrite', apache_get_modules())) {
 		$mod_rewrite = "<em><span class='success'>Enabled</span></em><br>";
@@ -68,7 +67,6 @@ if (function_exists('apache_get_modules')) {
 		}
 	}
 }
-
 
 if (PHP_OS == "Linux") {
 	if (is_dir (".git")) {
